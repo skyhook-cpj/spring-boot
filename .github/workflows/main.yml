@@ -17,7 +17,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: step1
         run: ps -ef
-             df -h
-             docker images
+      - name: step2
+        run: df -h
+      - name: step3
+        run: docker images
